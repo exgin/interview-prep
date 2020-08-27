@@ -26,3 +26,18 @@ function sumZeroMultiplePointers(arr) {
   }
 }
 // end sumZeroMultiplePointers
+
+// my version
+function sumZeroWithPointers(arr, start = 0, end = arr.length - 1) {
+  while (end >= start) {
+    let sum = arr[start] * arr[end];
+
+    if (sum === 0) {
+      return [arr[start], arr[end]];
+    } else if (sum > 0) {
+      return sumZeroWithPointers(arr, start, end - 1);
+    } else {
+      return sumZeroWithPointers(arr, start + 1, end);
+    }
+  }
+}

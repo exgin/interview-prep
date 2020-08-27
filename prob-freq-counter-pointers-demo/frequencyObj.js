@@ -10,3 +10,14 @@ function createFrequencyCounter(array) {
 
   return frequencies;
 }
+
+// a char counter
+function charCount(str) {
+  str.split('').reduce((obj, char) => {
+    if (/[A-Z0-9]/i.test(char)) {
+      char = char.toLowerCase();
+      obj[char] = obj[char] + 1 || 1;
+    }
+    return obj;
+  }, {});
+}
