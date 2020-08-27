@@ -75,7 +75,8 @@ function validAnagram(str1, str2) {
   let str1Freq = createFrequencyCounterStr(str1);
   let str2Freq = createFrequencyCounterStr(str2);
 
-  console.log(str1Freq.has('g'));
+  console.log(str1Freq);
+  console.log(str1Freq.get('b'));
 
   // 2. compare if the key value's are the sam
   for (let key of str1Freq.keys()) {
