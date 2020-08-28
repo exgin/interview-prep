@@ -55,15 +55,12 @@ function squaresWithFreqCounter(nums1, nums2) {
 // end squaresWithFreqCounter
 
 /* 
-freq counter challenege:
-
+*** freq counter challenege ***
 Given two strings, determine if the second string is an anagram of the first
-
 Anagram- a word, phrase, or name formed by rearranging the letters of another
 */
 function createFrequencyCounterStr(str) {
   const freq = new Map();
-
   for (let el of str) {
     freq[el] = freq[el] + 1 || 1;
   }
@@ -75,8 +72,10 @@ function validAnagram(str1, str2) {
   let str1Freq = createFrequencyCounterStr(str1);
   let str2Freq = createFrequencyCounterStr(str2);
 
+  // why are these values returning undefined & 0, when there is a Map
   console.log(str1Freq);
   console.log(str1Freq.get('b'));
+  console.log(str1Freq.size);
 
   // 2. compare if the key value's are the sam
   for (let key of str1Freq.keys()) {
