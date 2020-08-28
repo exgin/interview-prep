@@ -72,8 +72,8 @@ function validAnagram(str1, str2) {
   let str1Freq = createFrequencyCounterStr(str1);
   let str2Freq = createFrequencyCounterStr(str2);
 
-  // why are these values returning undefined & 0, when there is a Map
   console.log(str1Freq);
+  // why are these values returning undefined & 0, when there is a Map
   console.log(str1Freq.get('b'));
   console.log(str1Freq.size);
 
