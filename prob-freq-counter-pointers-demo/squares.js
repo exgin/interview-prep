@@ -56,6 +56,7 @@ function squaresWithFreqCounter(nums1, nums2) {
 
 /* 
 *** freq counter challenege ***
+
 Given two strings, determine if the second string is an anagram of the first
 Anagram- a word, phrase, or name formed by rearranging the letters of another
 */
