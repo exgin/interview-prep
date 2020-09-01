@@ -3,7 +3,7 @@
 a pair that equals the target
  */
 function averagePair(nums, target, start = 0, end = nums.length - 1) {
-  if (nums.length < 2) return false;
+  if (nums.length === 0) return false;
 
   // since it's sorted, we can get rid a partial portion of the array if the target is big
   let mid = Math.floor((start + end) / 2);
@@ -24,3 +24,4 @@ function averagePair(nums, target, start = 0, end = nums.length - 1) {
 
 console.log(averagePair([1, 2, 3], 1.5));
 console.log(averagePair([1, 3, 3, 5, 6, 7, 10, 12, 19], 8));
+console.log(averagePair([], 4));
