@@ -46,3 +46,4 @@ function sumZeroWithPointers(arr, start = 0, end = arr.length - 1) {
 }
 
 console.log(sumZeroWithPointers([-10, -7, -4, -2, 0, 1, 2, 3, 5]));
+console.log(sumZeroMultiplePointers([-10, -7, -4, -2, 0, 1, 2, 3, 5]));
