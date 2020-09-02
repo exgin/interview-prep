@@ -1,5 +1,4 @@
-// add whatever parameters you deem necessary
-/*
+/* FINISHED
 return the longest conseuctive decrease of integers
 [5,3,1,3,0] => 3 | 5,3,1
 [5,4,4,4,3,2] => 3 | 4,3,2

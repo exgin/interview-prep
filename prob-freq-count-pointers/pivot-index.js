@@ -1,4 +1,5 @@
-/* return the pivot index where the sum of the nums to the left, equal to the sums of the right
+/* FINISHED 
+return the pivot index where the sum of the nums to the left, equal to the sums of the right
 if there are more than one valid pivot index, return the smallest
 
 [1,2,1,6,3,1] => 3 | 1,2,1 = 4 & 3,1 = 4

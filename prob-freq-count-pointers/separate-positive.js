@@ -1,4 +1,4 @@
-/*
+/* FINISHED
 separate the array to which the positives are on the start & the negatives are to the end
 problem must be done in place, do not build a copy of the input array
 

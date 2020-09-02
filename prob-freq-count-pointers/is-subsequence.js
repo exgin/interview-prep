@@ -1,4 +1,5 @@
-/* Take 2 strings & checks whether the characters in the first string can 
+/* NOT FINISHED 
+Take 2 strings & checks whether the characters in the first string can 
 from a seubsequence of the second string. Order matters 
 
 (hello, hello world) => true

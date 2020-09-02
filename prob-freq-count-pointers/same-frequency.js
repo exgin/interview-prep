@@ -1,4 +1,5 @@
-/* Given two positive integers, find out if the two numbers have the same frequency of digits 
+/* FINISHED
+Given two positive integers, find out if the two numbers have the same frequency of digits 
 11, 111 => false
 321, 123 => true
 34,14 => false

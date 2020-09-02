@@ -1,3 +1,4 @@
-// add whatever parameters you deem necessary
-function countPairs() {
-}
+/* NOT FINISHED
+
+*/
+function countPairs() {}

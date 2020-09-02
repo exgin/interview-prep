@@ -1,4 +1,4 @@
-/* NOT FINISHED
+/*
 given a sorted array, & a target averge | return a boolean weather there is
 a pair that equals the target
  */
@@ -15,6 +15,7 @@ function averagePair(nums, target, start = 0, end = nums.length - 1) {
     }
     return averagePair(nums, target, start, end - 1);
   }
+  return false;
 }
 
 console.log(averagePair([1, 2, 3], 1.5));

@@ -1,4 +1,5 @@
-/* if the message can be built by the letters given, return true, else return false */
+/* FINISHED 
+if the message can be built by the letters given, return true, else return false */
 function constructNote(msg, ltrs) {
   // get the map for both msg & ltrs
   let msgCount = freqCounter(msg);
