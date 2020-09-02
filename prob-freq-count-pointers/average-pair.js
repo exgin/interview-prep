@@ -1,4 +1,5 @@
-/* given a sorted array, & a target averge | return a boolean weather there is
+/* NOT FINISHED
+given a sorted array, & a target averge | return a boolean weather there is
 a pair that equals the target
  */
 function averagePair(nums, target, start = 0, end = nums.length - 1) {
