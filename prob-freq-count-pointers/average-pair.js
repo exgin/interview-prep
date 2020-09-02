@@ -5,20 +5,15 @@ a pair that equals the target
 function averagePair(nums, target, start = 0, end = nums.length - 1) {
   if (nums.length === 0) return false;
 
-  // since it's sorted, we can get rid a partial portion of the array if the target is big
-  let mid = Math.floor((start + end) / 2);
+  while (end >= start) {
+    let avg = (nums[start] + nums[end]) / 2;
 
-  for (let i = 0; i < nums.length; i++) {
-    let avg = (nums[i] + nums[i + 1]) / 2;
-    console.log(avg);
     if (avg === target) return true;
-    return false;
-  }
 
-  if (target > nums[mid]) {
-    return averagePair(nums, target, mid + 1, end);
-  } else {
-    return averagePair(nums, target, start, mid - 1);
+    if (avg < target) {
+      return averagePair(nums, target, start + 1, end);
+    }
+    return averagePair(nums, target, start, end - 1);
   }
 }
 

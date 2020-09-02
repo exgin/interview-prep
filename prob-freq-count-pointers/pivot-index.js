@@ -27,7 +27,7 @@ function pivotIndex(nums) {
 
 console.log(pivotIndex([1, 3, 1]));
 
-/* starting version */
+/********************************************** starting version ********************************/
 function pivotIndexV1(nums, start = 0, end = nums.length - 1) {
   // maybe start from oppositve ends of the array and keep adding each value
 

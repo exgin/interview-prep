@@ -1,7 +1,7 @@
-/* its sorted, so maybe we can use pointers here 
+/* NOT FINISHED
+its sorted, so we can use pointers here 
 if both the first & last element is equal, there's only 1 unquie element, since its sorted
 if not, didve & keep repeating
-
 */
 function countUniqueValues(nums, start = 0, end = nums.length - 1, unique = 0) {
   if (nums.length === 0) return 0;
@@ -22,4 +22,4 @@ function countUniqueValues(nums, start = 0, end = nums.length - 1, unique = 0) {
   }
 }
 
-console.log(countUniqueValues([1, 1, 1, 1, 2, 3, 4, 5]));
+console.log(countUniqueValues([1, 1, 1, 1, 2, 2, 3, 4, 5]));
