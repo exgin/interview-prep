@@ -17,14 +17,19 @@ Output: seventy eight thousand nine hundread thirty four
 Anything over 99,999 is invalid
 */
 
-const base = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
-const teens = ['ten', 'eleven', 'twelve', 'thriteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'ninteen'];
+// https://stackoverflow.com/questions/14766951/convert-digits-into-words-with-javascript
+const base = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thriteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'ninteen'];
 const baseTens = ['twenty', 'thirty', 'fourty', 'fiffty', 'sixty', 'seventy', 'eigthy', 'ninety'];
 
 function splitNum(num) {
-  // split the number
+  let string = num.toString(),
+    base,
+    baseTens = 'and';
+
+  // check if num is a zero
+  if (parseInt(string) === 0) return 'zero';
 
   return num;
 }
 
-console.log(splitNum(13));
+console.log(splitNum(100));
