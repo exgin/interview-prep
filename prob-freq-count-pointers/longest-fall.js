@@ -6,6 +6,9 @@ return the longest conseuctive decrease of integers
 
 */
 function longestFall(nums) {
+  // base case
+  if (nums.length === 0) return 0;
+
   let distance = 1;
 
   // loop through the array

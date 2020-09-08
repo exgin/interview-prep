@@ -26,21 +26,21 @@ function pivotIndex(nums) {
   return pivotIndex;
 }
 
-console.log(pivotIndex([1, 3, 1]));
+console.log(pivotIndex([1, 2, 1, 6, 3, 1]));
 
 /********************************************** starting version ********************************/
-function pivotIndexV1(nums, start = 0, end = nums.length - 1) {
-  // maybe start from oppositve ends of the array and keep adding each value
+// function pivotIndexV1(nums, start = 0, end = nums.length - 1) {
+//   // maybe start from oppositve ends of the array and keep adding each value
 
-  for (start; start < nums.length; start++) {
-    let leftSum = (nums[start] += nums[start + 1]);
-    console.log(leftSum);
-  }
+//   for (start; start < nums.length; start++) {
+//     let leftSum = (nums[start] += nums[start + 1]);
+//     console.log(leftSum);
+//   }
 
-  for (end; end >= 0; end--) {
-    let rightSum = (nums[end] += nums[end - 1]);
-    console.log(rightSum);
-  }
-}
+//   for (end; end >= 0; end--) {
+//     let rightSum = (nums[end] += nums[end - 1]);
+//     console.log(rightSum);
+//   }
+// }
 
-console.log(pivotIndexV1([1, 2, 1, 6, 3, 1]));
+// console.log(pivotIndexV1([1, 2, 1, 6, 3, 1]));
