@@ -1,4 +1,4 @@
-/* NOT FINISHED
+/*  FINISHED
 find the pair of integers that sum equal to the target
 
 Examples:
